@@ -1,0 +1,573 @@
+/* Essential to reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gold: #d1781d;
+}
+
+body {
+  font-family: Poppins;
+  color: #1e1e1e;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#white_waves {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+p.head {
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  color: #000;
+}
+
+p.sub_head {
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*  Import fonts exclude google font
+@font-face {
+  font-family: ChopinScript;
+  src: url("/font/ChopinScript.ttf");
+}
+@font-face {
+  font-family: ChopinScript;
+  font-weight: bold;
+  src: url("/font/ChopinScript.ttf");
+}
+*/
+
+.table_of_content {
+  display: flex;
+  font-family: Poppins;
+  text-align: center;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px dashed black;
+}
+
+.content_title {
+  width: 275px;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Apply to all title*/
+p.title {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+
+p.sub_title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*Apply only to table of content*/
+p.title_content {
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1em;
+
+  background: linear-gradient(
+    140deg,
+    rgba(118, 58, 11, 1) 0%,
+    rgba(195, 117, 14, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p.proj_name {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 700;
+  color: #d1781d;
+}
+
+p.narrative {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #d1781d;
+}
+
+.creative_episodes {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.creative {
+  display: flex;
+  justify-content: center;
+}
+
+.design_outline {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.display {
+  display: flex;
+  gap: 170px;
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 0 70px;
+  justify-content: center;
+}
+
+.mobile {
+  display: flex;
+  width: fit-content;
+  position: relative;
+}
+
+.desktop {
+  position: relative;
+}
+
+.mobile_container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.desktop_container {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.prototype_mobile_container {
+  position: relative;
+  display: flex;
+  height: fit-content;
+  /* justify-content: center; */
+}
+
+.prototype_desktop_container {
+  display: flex;
+  position: relative;
+}
+
+.laptop_screen_container {
+  width: 388px;
+  height: 250px;
+  position: absolute;
+  left: 57px;
+  top: 9px;
+  border-radius: 12px 12px 0px 0px;
+  overflow: hidden;
+}
+
+.desktop_screen {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: 40% 0%;
+}
+
+.prototype_mobile {
+  width: 200px;
+}
+
+.phone_screen_container {
+  /* background-color: red; */
+  position: absolute;
+  left: 2px;
+  z-index: -1;
+
+  width: 99%;
+  height: 100%;
+
+  border-radius: 60px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.phone_screen {
+  width: calc(99% - 18px);
+  /* 98% to hide extra pixels from the mockup */
+  /* 18px to be used as alternate padding between the frames*/
+  /* calc is used to perform a between percentage/em/px/ vice versa */
+  height: inherit;
+  object-fit: fill;
+}
+
+.mob_project1 {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.text_mob {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.desk_project1 {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  padding-right: 50px; /*for non absolute */
+}
+
+.text_desk {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mob_compatability {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.desk_compatability {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+}
+
+.text_desk {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: end;
+}
+
+.cloth_left {
+  position: absolute;
+  left: -130px;
+  bottom: -150px;
+  z-index: -2; /* send to back */
+}
+
+.cloth_right {
+  position: absolute;
+  left: -130px; /*left righ bot can only be used for absolute*/
+  bottom: -170px;
+  z-index: -2; /* send to back */
+}
+
+.printed_codes_container {
+  margin-top: 120px;
+  display: flex;
+  padding: 0 70px;
+  flex-direction: column;
+}
+
+.card_list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.card_text {
+  display: flex;
+  width: 312px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.04);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prot_container {
+  width: 337px;
+  height: 242px;
+  border: 14px solid black;
+}
+
+.subtitle_container {
+  display: flex;
+  width: 337px;
+  height: fit-content;
+  padding: 14px;
+  gap: 8px;
+  flex-direction: column;
+}
+
+p.subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #d1781d;
+}
+
+.logo_container {
+  display: flex;
+  gap: 20px;
+}
+
+.about_author {
+  display: flex;
+  margin-top: 60px;
+  max-width: max-content;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.08);
+  flex-direction: column;
+  gap: 50px;
+  padding: 60px 60px 60px 70px;
+}
+
+.about_container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: fit-content;
+  gap: 40px;
+}
+
+p.paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.signature img {
+  display: flex;
+}
+
+.credentials_container {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+
+.cred_combination {
+  display: flex;
+  flex-direction: row;
+}
+
+.card_list {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+}
+
+.card_cred {
+  width: 312px;
+  height: fit-content;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.cred_container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.cred_shape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #d1781d;
+  width: 20px;
+  height: 20px;
+}
+
+.vertical_line {
+  display: flex;
+  background-color: #000;
+  width: 1px;
+  flex: 1;
+}
+
+.cred_content{
+  margin-bottom: 8px;
+  margin-top: -2px;
+}
+
+p.company_name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p.date {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.freelance_container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.text_freelance {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 70px;
+  gap: 10px;
+}
+
+.client_satisfaction {
+  display: flex;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bookmark_list {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  gap: 120px;
+}
+
+.bookmark_card {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  /* box-shadow: 4px 4px 4px rgba(0,0,0, 0.2); x y blur */
+
+  border-radius: 10px;
+  height: fit-content;
+  width: 376px;
+  background-color: #f1f1f1;
+}
+
+.bookmark_hole {
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bookmark_description {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.rate {
+  list-style-type: none;
+}
+
+.footer_container {
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  background-color: black;
+  align-items: center;
+  gap: 30px;
+}
+
+p.account {
+  color: #ffff;
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.account_list {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.text_account {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+p.account_site {
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.account1 {
+  border-right: 1px solid white;
+}
+
+.account2 {
+  border-right: 1px solid white;
+}
+
+.account3 {
+  border-right: 1px solid white;
+}
