@@ -330,7 +330,9 @@ a:hover {
   height: 242px;
   border: 14px solid black;
 }
-
+.project_img {
+  object-fit: fill;
+}
 .subtitle_container {
   display: flex;
   width: 337px;
@@ -338,6 +340,7 @@ a:hover {
   padding: 14px;
   gap: 8px;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 p.subtitle {
@@ -380,6 +383,12 @@ p.paragraph {
   font-size: 20px;
   font-weight: 500;
   color: black;
+}
+
+h2.rating{
+  color: #d1781d;
+  font-weight: 800;
+  font-size: 36px;
 }
 
 .signature img {
@@ -439,7 +448,7 @@ p.paragraph {
   flex: 1;
 }
 
-.cred_content{
+.cred_content {
   margin-bottom: 8px;
   margin-top: -2px;
 }
